@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog - Wisata Batu Malang</title>
+    <meta
+      name="description"
+      content="Jelajahi wisata & kuliner Malang Raya! Info destinasi hits, kuliner lezat, spot foto keren, dan rekomendasi penginapan terbaik."
+    />
+    <meta
+      name="keywords"
+      content="Wisata Malang,Wisata Batu,Kuliner Malang,Kuliner Batu,Bakso Cak Man,Pantai Malang,Air Terjun Malang,Pegunungan Malang,Spot Foto Malang"
+    />
+    <meta name="author" content="Wisata Batu Malang" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.wisatabatumalang.com/" />
+    <meta property="og:title" content="Blog - Wisata Batu Malang" />
+    <meta
+      property="og:description"
+      content="Jelajahi wisata & kuliner Malang Raya! Info destinasi hits, kuliner lezat, spot foto keren, dan rekomendasi penginapan terbaik."
+    />
+    <meta
+      property="og:image"
+      content="https://www.wisatabatumalang.com/assets/img/Background.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Favicons -->
+    <link href="assets/img/ficon.png" rel="icon" />
+    <link href="assets/img/ficon.png" rel="apple-touch-icon" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header fixed-top">
+      <div class="branding d-flex align-items-cente">
+        <div
+          class="container position-relative d-flex align-items-center justify-content-between"
+        >
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.webp" alt="Logo Wisata Batu Malang" />
+          </a>
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="index.html#about">Tentang Kami</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="#" class="active">Blog</a></li>
+              <li><a href="penulis.html">Penulis</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="background-image: url(assets/img/cta.webp)"
+      >
+        <div class="container position-relative">
+          <h1>Blog</h1>
+          <p>
+            Temukan berbagai artikel menarik seputar wisata, kuliner, dan tips
+            di Malang Raya.
+          </p>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Beranda</a></li>
+              <li class="current">Blog</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <section id="travel-destinations" class="travel-destinations section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div class="destination-search">
+              <input
+                type="text"
+                placeholder="Cari destinasi atau kuliner..."
+                class="search-input"
+                id="search-input"
+              />
+              <button class="search-btn" id="search-btn">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <ul
+              class="destination-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <li data-filter="*" class="filter-active">Semua</li>
+              <li data-filter=".filter-malang">Malang</li>
+              <li data-filter=".filter-batu">Batu</li>
+              <li data-filter=".filter-cafe">Cafe</li>
+              <li data-filter=".filter-restoran">Restoran</li>
+              <li data-filter=".filter-pegunungan">Pegunungan</li>
+              <li data-filter=".filter-pantai">Pantai</li>
+              <li data-filter=".filter-air-terjun">Air Terjun</li>
+              <li data-filter=".filter-taman">Taman</li>
+              <li data-filter=".filter-kuliner">Kuliner</li>
+              <li data-filter=".filter-spot-foto">Spot Foto</li>
+            </ul>
+            <div
+              class="row gy-4 isotope-container"
+              id="destination-list"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <!-- Toko Oen Malang -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-restoran"
+                data-title="Nostalgia Rasa di Depot Hok Lay Malang Ikon Kuliner Legendaris Sejak 1946"
+              >
+                <a href="toko-oen-malang-jejak-nostalgia-kuliner-abadi.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/toko-oen-malang-jejak-nostalgia-kuliner-abadi.webp"
+                      alt="Toko Oen Malang: Jejak Nostalgia Kuliner Abadi di Jantung Kayutangan"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Toko Oen Malang: Jejak Nostalgia Kuliner Abadi di Jantung Kayutangan</h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Warung Ronde Titoni -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Warung Ronde Titoni Malang: Kuliner Legendaris yang Tak Pernah Sepi Pengunjung"
+              >
+                <a href="warung-ronde-titoni-malang-kuliner-legendaris-yang-tak-pernah-sepi-pengunjung.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/warung-ronde-titoni-malang-kuliner-legendaris-yang-tak-pernah-sepi-pengunjung.webp"
+                      alt="Warung Ronde Titoni Malang: Kuliner Legendaris yang Tak Pernah Sepi Pengunjung"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Warung Ronde Titoni Malang: Kuliner Legendaris yang Tak Pernah Sepi Pengunjung</h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Warung Haji Ridwan -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Warung Lama Haji Ridwan Menjaga Api Cita Rasa Rawon Legendaris Malang Selama Seabad"
+              >
+                <a href="warung-lama-haji-ridwan-menjaga-api-cita-rasa-rawon-legendaris.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/warung-lama-haji-ridwan-menjaga-api-cita-rasa-rawon-legendaris.webp"
+                      alt="Warung Lama Haji Ridwan Menjaga Api Cita Rasa Rawon Legendaris Malang Selama Seabad"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Warung Lama Haji Ridwan Menjaga Api Cita Rasa Rawon Legendaris Malang Selama Seabad</h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Depok Hok Lay -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Nostalgia Rasa di Depot Hok Lay Malang Ikon Kuliner Legendaris Sejak 1946"
+              >
+                <a href="nostalgia-rasa-di-depot-hok-lay-malang.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/nostalgia-rasa-di-depot-hok-lay-malang.webp"
+                      alt="Nostalgia Rasa di Depot Hok Lay Malang: Ikon Kuliner Legendaris Sejak 1946"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Nostalgia Rasa di Depot Hok Lay Malang: Ikon Kuliner Legendaris Sejak 1946</h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Museum Angkut Batu -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-batu"
+                data-title="Museum Angkut Batu Wisata Edukatif dan Instagramable di Malang Raya"
+              >
+                <a href="museum-angkut-batu-wisata-edukatif-di-malang-raya.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/museum-angkut-batu-wisata-edukatif-di-malang-raya.webp"
+                      alt="Museum Angkut Batu - Wisata Edukatif dan Instagramable di Malang Raya"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Museum Angkut Batu - Wisata Edukatif dan Instagramable di Malang Raya</h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Jatim Park -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-taman"
+                data-title="Jatim Park Panduan Lengkap"
+              >
+                <a href="jatim-park-1-2-3-bedanya-apa.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/jatim-park-1-2-3-bedanya-apa.webp"
+                      alt="Jatim Park 1, 2, 3 Bedanya Apa? Panduan Lengkap Biar Nggak Salah Pilih!"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Jatim Park 1, 2, 3 Bedanya Apa? Panduan Lengkap Biar Nggak Salah Pilih!</h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Bromo -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-pegunungan"
+                data-title="Tiket Bromo Berapa Cek Harga Terbaru 2025 Rincian Biaya Lainnya!"
+              >
+                <a href="tiket-bromo-berapa-cek-harga-terbaru.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/tiket-bromo-berapa-cek-harga-terbaru.webp"
+                      alt="Tiket Bromo Berapa? Cek Harga Terbaru 2025 & Rincian Biaya Lainnya!"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Tiket Bromo Berapa? Cek Harga Terbaru 2025 & Rincian Biaya Lainnya!</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Ngaglik, Kota Batu</span
+                          >
+                          <span class="starting-price"
+                            >Rp 100.000 - Rp 140.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Coban Rondo -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Coban Rondo Pesona Alam Legenda dan Surga Wisata Malang"
+              >
+                <a href="coban-rondo-pesona-alam-legenda-dan-surga-wisata-malang.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Coban-Rondo-Pesona-Alam-Legenda-dan-Surga-Wisata-Malang.webp"
+                      alt="Coban Rondo - Pesona Alam, Legenda, dan Surga Wisata Malang"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Coban Rondo - Pesona Alam, Legenda, dan Surga Wisata Malang</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jl. Coban Rondo</span
+                          >
+                          <span class="starting-price"
+                            >Rp 15.000 - Rp 35.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Bakso Pantai Balekambang -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Pantai Balekambang Tanah Lot-nya Jawa Timur dengan Pesona Pura di Tengah Laut"
+              >
+                <a href="pantai-balekambang-tanah-lotnya-jawa-timur.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Pantai-Balekambang.webp"
+                      alt="Pantai Balekambang – Tanah Lot-nya Jawa Timur dengan Pesona Pura di Tengah Laut"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Pantai Balekambang – Tanah Lot-nya Jawa Timur dengan Pesona Pura di Tengah Laut</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Desa Srigonco, Kec. Bantur</span
+                          >
+                          <span class="starting-price"
+                            >Rp 10.000 - Rp 15.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Bakso Kota Cak Man -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Bakso Kota Cak Man Sejarah Menu Andalan Panduan Cabang Lengkap"
+              >
+                <a href="menu-dan-sejarah-bakso-kota-cak-man.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Bakso-Kota-Cak-Man.webp"
+                      alt="Bakso Cak Man"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Bakso Kota Cak Man - Sejarah, Menu Andalan, & Panduan Cabang Lengkap</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Kec. Lowokwaru, Malang</span
+                          >
+                          <span class="starting-price"
+                            >Rp 25.000 - Rp 50.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Warung Nasi Sidik -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Warung Nasi Sidik Batu Rawon Legendaris dan Panduan Lengkap untuk Pengunjung"
+              >
+                <a href="warung-nasi-sidik-batu-rawon-legendaris.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Warung-Nasi-Sidik.webp"
+                      alt="Warung Nasi Sidik"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Warung Nasi Sidik Batu - Rawon Legendaris dan Panduan Lengkap untuk Pengunjung</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jl. Agus Salim, Temas</span
+                          >
+                          <span class="starting-price"
+                            >Rp 20.000 - Rp 30.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Mesir Restaurant -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-restoran"
+                data-title="Mesir Restaurant Wisata Kuliner Timur Tengah Autentik di Indonesia"
+              >
+                <a href="restaurant-mesir-masakan-timur-tengah-indonesia.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Mesir-Restaurant.webp"
+                      alt="Mesir Restaurant"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Mesir Restaurant - Wisata Kuliner Timur Tengah Autentik di Indonesia</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jl. Diponegoro No.32</span
+                          >
+                          <span class="starting-price"
+                            >Rp 20.000 - Rp 108.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Pecel Kawi Malang -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-kuliner"
+                data-title="Pecel Kawi Malang Kuliner Legendaris dengan Cita Rasa Autentik"
+              >
+                <a href="pecel-kawi-malang-hj-musilah-kuliner-dengan-cita-rasa-autentik.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Pecel-Kawi-Malang-Hj-Musilah-Kuliner-Legendaris-dengan-Cita-Rasa-Autentik.webp"
+                      alt="Pecel Kawi Malang"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Pecel Kawi Malang Hj. Musilah – Kuliner Legendaris dengan Cita Rasa Autentik</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jl. Kawi Kios No.43B</span
+                          >
+                          <span class="starting-price"
+                            >Rp 14.000 - Rp 17.500</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Pantai Teluk Asmara -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-pantai"
+                data-title="Pantai Teluk Asmara Surga Tersembunyi dengan Panorama Eksotis di Malang Selatan"
+              >
+                <a href="pantai-teluk-asmara-surga-tersembunyi-di-malang.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Pantai-Teluk-Asmara-Surga-Tersembunyi-dengan-Panorama-Eksotis-di-Malang-Selatan.webp"
+                      alt="Pantai Teluk Asmara"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Pantai Teluk Asmara – Surga Tersembunyi dengan Panorama Eksotis di Malang Selatan</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Kec. Sumbermanjing Wetan</span
+                          >
+                          <span class="starting-price"
+                            >Rp 10.000 - Rp 15.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Kambung Biru Arema -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-spot-foto"
+                data-title="Kampung Biru Arema Ikon Kreativitas Warga Malang yang Instagramable"
+              >
+                <a href="kampung-biru-arema-ikon-kreativitas-warga-malang.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Kampung-Biru-Arema-Ikon-Kreativitas-Warga-Malang-yang-Instagramable.webp"
+                      alt="Kampung Biru Arema"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Kampung Biru Arema – Ikon Kreativitas Warga Malang yang Instagramable</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Kec. Klojen, Malang</span
+                          >
+                          <span class="starting-price"
+                            >Rp 2.000 - Rp 3.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Eco Green Park -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-taman"
+                data-title="Eco Green Park Malang Wisata Edukasi & Rekreasi Keluarga yang Seru"
+              >
+                <a href="eco-green-park-malang-wisata-edukasi-yang-seru.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Eco-Green-Park-Malang-Wisata-Edukasi-Rekreasi-Keluarga-yang-Seru.webp"
+                      alt="Eco Green Park Malang – Wisata Edukasi & Rekreasi Keluarga yang Seru"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Eco Green Park Malang – Wisata Edukasi & Rekreasi Keluarga yang Seru</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jalan Oro-Oro Ombo No.9A</span
+                          >
+                          <span class="starting-price"
+                            >Rp 50.000 - Rp 80.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Coban Putri Malang -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-air-terjun"
+                data-title="Coban Putri Malang Air Terjun Cantik untuk Liburan dan Spot Foto Hits"
+              >
+                <a href="coban-putri-malang-air-terjun-cantik-untuk-liburan.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Coban-Putri-Malang-Air-Terjun-Cantik-untuk-Liburan-dan-Spot-Foto-Hits.webp"
+                      alt="Coban Putri Malang"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Coban Putri Malang – Air Terjun Cantik untuk Liburan dan Spot Foto Hits</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jalur Lkr. Bar.</span
+                          >
+                          <span class="starting-price"
+                            >Rp 5.000 - Rp 10.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Kampung Warna Warni Jodipan -->
+              <div
+                class="col-lg-4 col-md-6 destination-item isotope-item filter-spot-foto"
+                data-title="Kampung Warna Warni Jodipan Wisata Urban Kreatif dengan Spot Foto Aesthetic"
+              >
+                <a href="kampung-warna-warni-jodipan-malang.html" class="destination-tile" target="_blank">
+                  <div class="tile-image">
+                    <img
+                      src="assets/img/artikel/Kampung-Warna-Warni-Jodipan-Wisata-Urban-Kreatif-dengan-Spot-Foto-Aesthetic.webp"
+                      alt="Kampung Warna Warni Jodipan"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="overlay-content">
+                      <span class="destination-tag luxury"></span>
+                      <div class="destination-info">
+                        <h2>Kampung Warna Warni Jodipan – Wisata Urban Kreatif dengan Spot Foto Aesthetic</h2>
+                        <!-- <div class="destination-stats">
+                          <span class="tours-available"
+                            ><i class="bi bi-map"></i> Jalan Ir. H. Juanda No. 9</span
+                          >
+                          <span class="starting-price"
+                            >Rp 2.000 - Rp 5.000</span
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="d-flex align-items-center">
+              <span class="sitename">Wisata Batu Malang</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Batu, Malang</p>
+              <p>Indonesia</p>
+              <p class="mt-3">
+                <strong>telepon :</strong> <span>+62 8956 3906 8080</span>
+              </p>
+              <p>
+                <strong>Email :</strong> <span>wisatabatumalang@gmail.com</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Tautan Berguna</h4>
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="index.html">Beranda</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="galeri.html">Galeri</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="penulis.html">Penulis</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Network</h4>
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Network 1</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Network 2</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Network 3</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <a href="#">Network 4</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h4>Hubungi Kami</h4>
+            <p>
+              Butuh info lebih lanjut atau ingin bertanya? Langsung chat lewat
+              WhatsApp saja.
+            </p>
+            <a
+              href="https://wa.me/62895639068080"
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              <i class="bi bi-whatsapp"></i> Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">WisataBatuMalang</strong>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- Filter (Matikan kalau gamau ada # di link) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filters = document.querySelectorAll(".destination-filters li");
+        const hashMap = {
+          "*": "Semua",
+          ".filter-malang": "Malang",
+          ".filter-batu": "Batu",
+          ".filter-cafe": "Cafe",
+          ".filter-restoran": "Restoran",
+          ".filter-pegunungan": "Pegunungan",
+          ".filter-pantai": "Pantai",
+          ".filter-air-terjun": "AirTerjun",
+          ".filter-penginapan": "Penginapan",
+          ".filter-taman": "Taman",
+          ".filter-kuliner": "Kuliner",
+        };
+        filters.forEach((filter) => {
+          filter.addEventListener("click", function () {
+            const filterValue = filter.getAttribute("data-filter");
+            const hashValue = hashMap[filterValue];
+            if (hashValue) {
+              location.hash = hashValue;
+            }
+          });
+        });
+        const currentHash = location.hash.replace("#", "");
+        if (currentHash) {
+          for (let key in hashMap) {
+            if (hashMap[key].toLowerCase() === currentHash.toLowerCase()) {
+              const activeFilter = document.querySelector(
+                `.destination-filters li[data-filter="${key}"]`
+              );
+              if (activeFilter) activeFilter.click();
+            }
+          }
+        }
+      });
+    </script>
+    <!-- Serach -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      const searchInput = document.getElementById("search-input");
+      const searchBtn = document.getElementById("search-btn");
+      const isoContainer = document.querySelector(".isotope-container");
+      const iso = new Isotope(isoContainer, {
+        itemSelector: ".destination-item",
+        layoutMode: "masonry",
+      });
+      searchBtn.addEventListener("click", searchDestinations);
+      searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") searchDestinations();
+      });
+      function searchDestinations() {
+        const query = searchInput.value.toLowerCase().trim();
+        if (query === "") {
+          iso.arrange({ filter: "*" });
+          return;
+        }
+        iso.arrange({
+          filter: function (itemElem) {
+            const title = itemElem.getAttribute("data-title").toLowerCase();
+            const words = title.split(" ");
+            return words.some((word) => word.includes(query));
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
